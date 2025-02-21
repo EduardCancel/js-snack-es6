@@ -25,3 +25,15 @@ const bicicle = [
     'weight' : '23'
 }
 ]
+
+let lightBycicle = bicicle[0];
+
+// create a cicle
+
+for (i = 1; i < bicicle.length; i++){
+    if (bicicle[i].weight < lightBycicle.weight){
+        lightBycicle = bicicle[i]
+    }
+}
+
+console.log(lightBycicle);
